@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1c0f09">
+<title>Restaurante Deus é Fiel. Boa comida. Bons momentos. Em Caetés.</title>
+<meta name="description" content="Restaurante Deus é Fiel, em Caetés, Pernambuco. Boa comida, ambiente de tijolo à vista e iluminação quente, para almoço, jantar e encontros especiais.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="progress" id="progressBar"></div>
+
+<header class="topbar">
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
+  <a href="index.html" class="brand">
+    <span class="brand-top">Deus é Fiel</span>
+    <span class="brand-bottom">RESTAURANTE, CAETÉS PE</span>
+  </a>
+  <a href="https://wa.me/55SEUNUMERO?text=Ol%C3%A1%21%20Quero%20fazer%20uma%20reserva." class="icon-btn whats-topbar" aria-label="Reservar pelo WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-1.4-.7-2.3-1.2-3.2-2.8-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4-.1-.1-.5-1.2-.7-1.7-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.4 1.9.7 2.3.6 2.7.5.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.3-.2-.5-.3Z"/></svg>
+  </a>
+</header>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-head">
+    <a href="index.html" class="brand">
+      <span class="brand-top">Deus é Fiel</span>
+      <span class="brand-bottom">RESTAURANTE, CAETÉS PE</span>
+    </a>
+    <button class="sidebar-close" id="sidebarClose" aria-label="Fechar menu">×</button>
+  </div>
+  <nav class="sidebar-nav">
+      <a href="index.html" class="is-active" aria-current="page">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="delicias.html">Delícias</a>
+      <a href="cardapio.html">Cardápio</a>
+      <a href="depoimentos.html">Depoimentos</a>
+      <a href="localizacao.html">Localização</a>
+      <a href="faq.html">Dúvidas</a>
+  </nav>
+  <a href="https://wa.me/55SEUNUMERO?text=Ol%C3%A1%21%20Quero%20fazer%20uma%20reserva." class="btn btn--whats btn--full sidebar-cta">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-1.4-.7-2.3-1.2-3.2-2.8-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4-.1-.1-.5-1.2-.7-1.7-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.4 1.9.7 2.3.6 2.7.5.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.3-.2-.5-.3Z"/></svg>
+    Reservar pelo WhatsApp
+  </a>
+  <div class="sidebar-social">
+    <a href="#" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.google.com/maps/search/?api=1&query=Restaurante%20Deus%20%C3%A9%20Fiel%2C%20Caet%C3%A9s%2C%20PE" target="_blank" rel="noopener">Google Maps</a>
+  </div>
+</aside>
+
+<main class="page">
+
+<!-- ===================== HERO / BANNER ===================== -->
+<section class="hero" id="inicio">
+  <div class="hero-glow" id="heroGlow"></div>
+  <div class="grain"></div>
+  <span class="ember-particle" style="left:64%; width:5px; height:5px; animation-delay:.2s; --drift:16px;"></span>
+  <span class="ember-particle" style="left:72%; width:4px; height:4px; animation-delay:1.4s; --drift:-24px;"></span>
+  <span class="ember-particle" style="left:80%; width:6px; height:6px; animation-delay:2.6s; --drift:10px;"></span>
+  <span class="ember-particle" style="left:88%; width:4px; height:4px; animation-delay:.9s; --drift:-14px;"></span>
+  <span class="ember-particle" style="left:94%; width:5px; height:5px; animation-delay:3.4s; --drift:22px;"></span>
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow">Restaurante Deus é Fiel</span>
+      <h1>O sabor que você procura está em <em>Caetés</em></h1>
+      <p class="hero-lead">Tem dias em que tudo o que você precisa é de uma boa comida, um ambiente agradável e um momento para aproveitar de verdade. Aqui, cada detalhe foi pensado para transformar uma simples refeição em uma experiência que dá vontade de repetir.</p>
+      <p class="hero-place">Estamos em <span>Caetés, Pernambuco</span>, esperando por você.</p>
+      <div class="btn-row">
+        <a href="cardapio.html" class="btn btn--primary">Ver cardápio</a>
+        <a href="localizacao.html" class="btn btn--ghost">Como chegar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TEASER SOBRE ===================== -->
+<section class="section--light section-pad" id="sobre-teaser">
+  <div class="container about-grid">
+    <span class="eyebrow reveal">Nossa história</span>
+    <h2 class="reveal">Mais do que comer. É aproveitar o momento.</h2>
+    <div class="about-text reveal">
+      <p>Boa comida reúne pessoas. É no almoço com a família, no jantar com quem você gosta, no encontro com os amigos ou naquele momento em que você simplesmente quer comer algo realmente gostoso.</p>
+      <p class="pull">Servir comida de qualidade, proporcionar uma experiência agradável e fazer você sair daqui pensando na próxima visita.</p>
+    </div>
+    <div class="btn-row reveal" style="margin-top:8px;">
+      <a href="sobre.html" class="btn btn--ghost on-light">Conheça nossa história</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== POR QUE ESCOLHER ===================== -->
+<section class="section--dark section-pad" id="porque">
+  <div class="container">
+    <span class="eyebrow reveal">Por que escolher o Deus é Fiel</span>
+    <h2 class="reveal">Quatro razões para voltar sempre</h2>
+    <div class="grid-4">
+      <div class="card reveal">
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v7a3 3 0 0 0 6 0V3"/><path d="M9 10v11"/><path d="M17 3c-1.5 2-1.5 6 0 8s1.5 6 0 8"/></svg></div>
+        <h3>Boa comida</h3>
+        <p>Pratos preparados para entregar sabor e qualidade em cada pedido.</p>
+      </div>
+      <div class="card reveal">
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+        <h3>Em Caetés</h3>
+        <p>Uma opção para quem procura onde comer bem em Caetés, Pernambuco.</p>
+      </div>
+      <div class="card reveal">
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 8.5c0 4.5-8 10.5-8 10.5S4 13 4 8.5A4.5 4.5 0 0 1 12 6a4.5 4.5 0 0 1 8 2.5Z"/></svg></div>
+        <h3>Feito para você</h3>
+        <p>Atendimento e ambiente pensados para tornar sua experiência ainda melhor.</p>
+      </div>
+      <div class="card reveal">
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M6 3h12l-1 8a5 5 0 0 1-10 0Z"/><path d="M6 5H4a2 2 0 0 0 2 4M18 5h2a2 2 0 0 1-2 4"/></svg></div>
+        <h3>Momentos que ficam</h3>
+        <p>Almoço, jantar, encontro com amigos ou aquele momento especial em família.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section class="cta-band" id="cta-caetes">
+  <div class="brick-texture"></div>
+  <div class="container" style="position:relative;">
+    <h2 class="reveal">Seu próximo almoço em Caetés pode ser aqui</h2>
+    <p class="reveal">Está procurando um restaurante em Caetés, PE para almoçar? Você encontrou. Em vez de escolher qualquer lugar, escolha um ambiente onde boa comida e bons momentos caminham juntos.</p>
+    <div class="btn-row reveal">
+      <a href="https://wa.me/55SEUNUMERO?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20ou%20reserva." class="btn btn--whats">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-1.4-.7-2.3-1.2-3.2-2.8-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4-.1-.1-.5-1.2-.7-1.7-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.4 1.9.7 2.3.6 2.7.5.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.3-.2-.5-.3Z"/></svg>
+        Reservar pelo WhatsApp
+      </a>
+      <a href="cardapio.html" class="btn btn--ghost" style="border-color:rgba(246,236,221,.5);">Ver cardápio</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== RODAPÉ ===================== -->
+<footer>
+  <div class="container foot-top">
+    <div class="foot-brand">
+      <span class="brand-top" style="font-size:1.4rem;">Restaurante Deus é Fiel</span>
+      <p><strong style="color:var(--cream);">Boa comida. Bons momentos. Em Caetés.</strong></p>
+      <p>O Restaurante Deus é Fiel é uma opção para quem procura um lugar para comer em Caetés, Pernambuco, seja para almoço, jantar, encontro com amigos ou momentos em família.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="https://wa.me/55SEUNUMERO?text=Ol%C3%A1%21">WhatsApp</a></li>
+        <li><span class="placeholder" style="background:rgba(227,164,33,.12); color:var(--gold);">[Telefone]</span></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Redes sociais</h4>
+      <ul>
+        <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=Restaurante%20Deus%20%C3%A9%20Fiel%2C%20Caet%C3%A9s%2C%20PE" target="_blank" rel="noopener">Google Maps</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Endereço</h4>
+      <ul>
+        <li><span class="placeholder" style="background:rgba(227,164,33,.12); color:var(--gold);">[Endereço completo]</span></li>
+        <li>Caetés, Pernambuco</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container foot-bottom">
+    <span>© 2026 Restaurante Deus é Fiel. Todos os direitos reservados.</span>
+    <span>Feito com carinho em Caetés, PE</span>
+  </div>
+</footer>
+
+<a href="https://wa.me/55SEUNUMERO?text=Ol%C3%A1%21%20Quero%20fazer%20uma%20reserva." class="whats-float" aria-label="Reservar pelo WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-1.4-.7-2.3-1.2-3.2-2.8-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4-.1-.1-.5-1.2-.7-1.7-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.4 1.9.7 2.3.6 2.7.5.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.3-.2-.5-.3Z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
